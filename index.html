@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <header class="header">
+    <div class="menu container">
+      <a href="#" class="logo"><img src="imagenes/cabeza.png" alt="logo"></a>
+      
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-label">
+        <img src="imagenes/menu_3lineas.png" class="menu-icono" alt="menú">
+      </label>
+  
+      <nav class="navbar">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#producto">Proyecto</a></li>
+          <li><a href="#curiosidades">Curiosidades</a></li>
+          <li><a href="#desarrolladores">Desarrolladores</a></li>
+          <li><a href="#informe">Informe</a></li>
+          <li><a href="#aplicacion">Aplicación</a></li>
+        </ul>
+      </nav>
+  
+      <div class="socials-1">
+        <a href="#"><img src="imagenes/r1.svg" alt=""></a>
+        <a href="#"><img src="imagenes/r2.svg" alt=""></a>
+      </div>
+    </div>
+  
+    <div class="header-content container" id="inicio">
+      <div class="head-txt">
+        <h1>CHUAS BOT</h1>
+        <p> Bienvenido!. Este proyecto es  fruto de un equipo con visión 
+          y compromiso, listo para usar su poder tecnológico en favor del planeta, 
+          demostrando que pueden ir de la mano.</p>
+        <a href="#" class="btn-1">Información</a>
+      </div>
+      <div class="header-img">
+        <img src="imagenes/logoChuas.png" alt="logo chuas">
+      </div>
+    </div>
+  </header>
+  
+
+  <section class="about" id="producto">
+    <div class="about-container container">
+
+      <!-- Título centrado con hojas -->
+      <div class="about-txt-decorated">
+        <img class="ab1" src="imagenes/ab1.png" alt="Imagen decorativa izquierda">
+        <h2>Sobre nuestro producto</h2>
+        <img class="ab2" src="imagenes/ab1.png" alt="Imagen decorativa derecha">
+      </div>
+
+      <!-- Contenido dividido: texto a la izquierda, imagen a la derecha -->
+      <div class="about-content">
+        <div class="about-txt">
+          <p>
+            Prototipo de robot con un sistema de manejo intuitivo que incorpore un sistema de ventilación (con aspiradora), 
+            mejorando la eficacia y productividad en la recolección de residuos especialmente en áreas de difícil acceso, 
+            con el objetivo de optimizar el proceso de recolección de residuos accesible y fácil de usar tanto para el servicio 
+            de recolección de basura (Hormiguitas Chuas) como para usuarios particulares.
+          </p>
+          <a href="#" class="btn-2">Información</a>
+        </div>
+
+        <div class="about-img">
+          <img src="imagenes/hormiga.jpg" alt="imagen producto">
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section class="curiosidades" id="curiosidades" style="background-color: #000;">
+    <div class="curiosidades-container container">
+      <div class="curiosidades-txt">
+        <h2 style="color: aliceblue;">Curiosidades</h2>
+      </div>
+  
+      <div class="curiosidades-content">
+        <div class="div-izquierdo">
+          <p style="color: aliceblue;">En Ecuador, las "hormiguitas chuas" podrían mejorar la gestión de residuos sólidos, especialmente en ciudades como Cuenca, 
+            Guayaquil y Quito. Estos robots ayudarían en zonas de difícil acceso, complementando el trabajo de los recolectores y 
+            contribuyendo a la sostenibilidad ambiental.</p>
+          <img src="imagenes/chua.png" alt="Hormiguita Chua" class="img-circular"/>
+        </div>
+  
+        <div class="div-derecho">
+          <p style="color: aliceblue;">La recolección y el reciclaje de basura son esenciales para reducir la contaminación y preservar el planeta. El reciclaje 
+            ayuda a disminuir la demanda de materias primas, la contaminación industrial y las emisiones de gases.</p>
+          <img src="imagenes/reciclaje.png" alt="Reciclaje" class="img-circular"/>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="construccion" class="construccion">
+    <div class="construccion-container container">
+      <div class="construccion-txt">
+        <h2>Construcción</h2>
+      </div>
+  
+      <div class="construccion-content">
+        <p style="color: #000;">En el inicio de la construcción del prototipo del robot nos basamos en la mascota de las hormigas chuas, 
+          primero realizamos un prototipo utilizando cajas de plástico y el Arduino Uno. El primer modelo nos funcionó, 
+          aunque con algunos detalles a mejorar, así que decidimos modelar la hormiga en 3D para crear un diseño más preciso 
+          y funcional. Tras esto, integramos un ESP32 para controlar mejor los sistemas del robot y lograr un funcionamiento 
+          más eficiente y versátil en diversas situaciones de recolección de residuos.</p>
+        
+        <!-- Imagen circular añadida -->
+        <img src="imagenes/construccion.jpeg" alt="Construcción del prototipo" class="img-circular"/>
+      </div>
+    </div>
+  </section>
+
+  <section class="galeria-info" style="background-color: #000;">
+    <div class="galeria-container">
+      
+      <!-- Bloque Izquierdo -->
+      <div class="galeria-bloque">
+        <p >En la contruccion del prototipo, tuvimos que fijarnos bien en la 
+            parte del diseño, esto implica en el posicionamiento de los cables ya que de eso dependia
+            el correcto funcionaimento de este,como se observa.
+        </p>
+        <div class="carrusel-box">
+          <button class="flecha izquierda" onclick="moverCarrusel('carrusel1', -1)">&#10094;</button>
+          <div class="carrusel" id="carrusel1">
+            <img src="imagenes/chuas1.jpg" alt="">
+            <img src="imagenes/chuas2.jpg" alt="">
+            <img src="imagenes/chuas3.jpg" alt="">
+            <img src="imagenes/chuas4.jpg" alt="">
+          </div>
+          <button class="flecha derecha" onclick="moverCarrusel('carrusel1', 1)">&#10095;</button>
+        </div>
+      </div>
+  
+      <!-- Bloque Derecho -->
+      <div class="galeria-bloque">
+        <p >En la cuestion del desarrollo de la palicacion tuvimos que investigar cual conexion 
+            o tipo de bluetho nos beneficiaba mas en cuestion de conexion y recursos, asi como el enlace con los diferentes 
+            componetes, como el sensor de peso, y el modulo gps para la ubicacion de este
+        </p>
+        <div class="carrusel-box">
+          <button class="flecha izquierda" onclick="moverCarrusel('carrusel2', -1)">&#10094;</button>
+          <div class="carrusel" id="carrusel2">
+            <img src="imagenes/ap1.jpg" alt="">
+            <img src="imagenes/ap2.jpg" alt="">
+            <img src="imagenes/ap3.jpg" alt="">
+            <img src="imagenes/ap4.jpg" alt="">
+          </div>
+          <button class="flecha derecha" onclick="moverCarrusel('carrusel2', 1)">&#10095;</button>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  
+
+  <section id="desarrolladores" class="desarrolladores">
+    <div class="desarrolladores-container container">
+      <div class="desarrolladores-txt">
+        <h2>Desarrolladores</h2>
+      </div>
+  
+      <div class="contenido">
+        <div class="tarjetas">
+          <div class="tarjeta">
+            <h3>Alfonso Auquilla</h3>
+            <p>17 AÑOS</p>
+            <p>ESPECIALIDAD: INFORMÁTICA</p>
+            <img class="fotos" src="imagenes/Captura de pantalla 2025-05-07 001734.png" alt="Alfonso Auquilla">
+          </div>
+          <div class="tarjeta">
+            <h3>Barbara Sarmiento</h3>
+            <p>17 AÑOS</p>
+            <p>ESPECIALIDAD: INFORMÁTICA</p>
+            <img class="fotos" src="imagenes/Captura de pantalla 2025-05-07 001835.png" alt="Barbara Sarmiento">
+          </div>
+          <div class="tarjeta">
+            <h3>Dayanara Calle</h3>
+            <p>17 AÑOS</p>
+            <p>ESPECIALIDAD: MECATRÓNICA</p>
+            <img class="fotos" src="imagenes/Captura de pantalla 2025-05-07 001539.png" alt="Dayanara Calle">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="informe" class="informe">
+    <div class="informe-container container">
+      <h2>Informe</h2>
+      <div class="contenido-container">
+        <img src="imagenes/My_PDF.png" alt="Código QR">
+        <p>Escanea este código QR para conocer cómo logramos crear a tu robot favorito 🤖</p>
+      </div>
+    </div>
+  </section>
+  <section id="aplicacion" class="aplicacion">
+    <div class="container app-container">
+      <h2>Aplicación</h2>
+      <div class="qr-placeholder">
+        <!-- Aquí irá tu QR en el futuro -->
+        <img src="imagenes/aplicacion_chuas_bot.jpg" alt="">
+      </div>
+      <div class="pasos">
+        <div class="paso"><strong>Paso 1:</strong> Descargar</div>
+        <div class="paso"><strong>Paso 2:</strong> Otorgar los permisos de ubicación y dispositivos cercanos.</div>
+        <div class="paso"><strong>Paso 3:</strong> Robot en superficie que requiera limpieza</div>
+        <div class="paso"><strong>Paso 4:</strong> Conectar app con robot</div>
+      </div>
+    </div>
+  </section>
+  <footer style="background-color: #000; color: white; text-align: center; padding: 20px; font-family: Arial, sans-serif;">
+    Alfonso Auquilla - Barbara Sarmiento - Dayanara Calle
+  </footer>
+  
+  
+<!-- aquí va todo tu contenido HTML -->
+
+<!-- ESTE script debe ir al final, antes de cerrar el body -->
+<script>
+    const indices = {
+      carrusel1: 0,
+      carrusel2: 0,
+    };
+  
+    function moverCarrusel(id, direccion) {
+      const carrusel = document.getElementById(id);
+      const total = carrusel.children.length;
+      const ancho = carrusel.clientWidth;
+      indices[id] += direccion;
+  
+      if (indices[id] < 0) indices[id] = total - 1;
+      if (indices[id] >= total) indices[id] = 0;
+  
+      carrusel.style.transform = `translateX(-${indices[id] * ancho}px)`;
+    }
+  </script>
+  </body>
+  </html>
+  
